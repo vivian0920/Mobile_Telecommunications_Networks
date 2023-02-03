@@ -1,0 +1,43 @@
+{
+	"priority": 48764,
+	"timeout": 0,
+	"isPermanent": true,
+	"deviceId": "of:0000000000000001",
+	"treatment": {
+		"instructions": [
+			{
+    				"type":"L2MODIFICATION",
+    				"subtype":"ETH_SRC",
+    				"mac":"00:00:00:00:00:04"
+  			},
+			{
+				"type": "L3MODIFICATION",
+				"subtype": "IPV4_SRC",
+				"ip": "10.1.100.2"
+			},
+			{
+				"type": "OUTPUT",
+				"port": 1
+			}
+			
+		]
+		
+	},
+	"selector": {
+		"criteria": [
+			{
+				"type": "ETH_TYPE",
+				"ethType": "0x0800"
+			},
+			{
+				"type": "IPV4_SRC",
+				"ip": "10.1.100.1/32"
+			},
+			{
+				"type": "IPV4_DST",
+				"ip": "10.0.0.1/32"
+			}
+		]
+	}
+}
+		

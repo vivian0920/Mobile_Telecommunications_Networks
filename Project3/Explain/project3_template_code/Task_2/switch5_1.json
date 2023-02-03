@@ -1,0 +1,27 @@
+{
+	"priority": 48763,
+	"timeout": 0,
+	"isPermanent": true,
+	"deviceId": "of:0000000000000005",
+	"treatment": {
+		"instructions": [
+			{
+				"type": "OUTPUT",
+				"port": 
+			}
+		]
+	},
+	"selector": {
+		"criteria": [
+			{
+				"type": "ETH_TYPE",
+				"ethType": "0x0800"
+			},
+			{
+				"type": "IPV4_DST",
+				"ip": "10.1.100.1/32"
+			}
+		]
+	}
+}
+		
